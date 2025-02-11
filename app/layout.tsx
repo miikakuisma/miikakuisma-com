@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "miikakuisma.com",
+    template: "%s | miikakuisma.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Visionary Frontend Developer",
   openGraph: {
-    title: "chronark.com",
+    title: "miikakuisma.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Visionary Frontend Developer",
+    url: "https://miikakuisma.com",
+    siteName: "miikakuisma.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://miikakuisma.com/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Miika Kuisma",
     card: "summary_large_image",
   },
   icons: {
@@ -51,8 +51,8 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
+  src: "../public/fonts/BalooBhaijaan2.ttf",
+  variable: "--font-baloo",
 });
 
 export default function RootLayout({

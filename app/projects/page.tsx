@@ -20,9 +20,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "sumopaint")!;
+  const top2 = allProjects.find((project) => project.slug === "sumoaudio")!;
+  const top3 = allProjects.find((project) => project.slug === "cymatics")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -43,10 +43,10 @@ export default async function ProjectsPage() {
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            Projects
+            Code Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            NextJS, React, TypeScript, TailwindCSS, Web Audio API, WebAssembly, Web Component, Pure Vanilla, React Native, Expo, Swift / XCode, Open AI
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -67,12 +67,12 @@ export default async function ProjectsPage() {
                       <span>SOON</span>
                     )}
                   </div>
-                  <span className="flex items-center gap-1 text-xs text-zinc-500">
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
                       views[featured.slug] ?? 0,
                     )}
-                  </span>
+                  </span> */}
                 </div>
 
                 <h2

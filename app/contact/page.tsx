@@ -1,28 +1,34 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Globe } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
-		label: "Twitter",
-		handle: "@chronark_",
-	},
-	{
-		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
-		label: "Email",
-		handle: "dev@chronark.com",
+		icon: <Globe size={20} />,
+		href: "https://tatami.dev",
+		label: "tatami.dev",
+		handle: "Tatami Tuotanto",
 	},
 	{
 		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
-		label: "Github",
-		handle: "chronark",
+		href: "https://github.com/miikakuisma",
+		label: "@miikakuisma",
+		handle: "Github",
 	},
+	{
+		icon: <Linkedin size={20} />,
+		href: "https://www.linkedin.com/in/miikakuisma/",
+		label: "miikakuisma",
+		handle: "LinkedIn",
+	},
+	// {
+	// 	icon: <Twitter size={20} />,
+	// 	href: "https://twitter.com/miikakuisma",
+	// 	label: "Twitter",
+	// 	handle: "@miikakuisma",
+	// },	
 ];
 
 export default function Example() {

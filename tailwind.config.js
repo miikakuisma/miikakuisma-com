@@ -3,7 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		"./app/**/*.{js,ts,jsx,tsx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 		"./mdx-components.tsx",
 		"content/**/*.mdx",
 	],
@@ -30,7 +30,7 @@ module.exports = {
 			},
 			fontFamily: {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-				display: ["var(--font-calsans)"],
+				display: ["var(--font-baloo)"],
 			},
 			backgroundImage: {
 				"gradient-radial":
@@ -102,10 +102,21 @@ module.exports = {
 					},
 				},
 			},
+			containerQueries: {
+				sm: '640px',
+				md: '768px',
+				lg: '1024px',
+			},
+			colors: {
+				primary: {
+					DEFAULT: 'rgb(var(--color-primary) / <alpha-value>)',
+				}
+			}
 		},
 	},
 	plugins: [
 		require("@tailwindcss/typography"),
+		require("@tailwindcss/line-clamp"),
 		require("tailwindcss-debug-screens"),
 	],
 };
