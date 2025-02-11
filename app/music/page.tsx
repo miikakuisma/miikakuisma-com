@@ -18,8 +18,7 @@ export default function MusicPage() {
 						Deep Trance & Epic Chill Out
 					</p>
 				</div>
-				<div className="w-full h-px bg-purple-800" />
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-3">
 					{allReleases
 						.sort((a, b) => {
 							if (a.date && b.date) {
@@ -33,6 +32,61 @@ export default function MusicPage() {
 							</Card>
 						))}
 				</div>
+				<div className="w-full h-px" />
+				<h3 className="text-2xl font-bold tracking-tight text-purple-100 sm:text-3xl text-center">
+					Discover more
+				</h3>
+				<div className="flex justify-center gap-8">
+					<a 
+						href="https://www.beatport.com/artist/miika-kuisma/1147/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/beatport.svg" alt="Beatport" className="w-12 h-12 m-0" />
+					</a>
+					<a 
+						href="https://open.spotify.com/artist/4pPp53NDve95wOFN9ZvMlo"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/spotify.svg" alt="Spotify" className="w-12 h-12 m-0" />
+					</a>
+					<a 
+						href="https://music.apple.com/us/artist/miika-kuisma/102279592"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/apple_music.png" alt="Apple Music" className="w-12 h-12 m-0" />
+					</a>
+					<a 
+						href="https://soundcloud.com/miikakuisma"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/soundcloud.svg" alt="SoundCloud" className="w-12 h-12 m-0" />
+					</a>
+					<a 
+						href="https://www.youtube.com/@miikakuisma"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/youtube.svg" alt="YouTube" className="w-12 h-12 m-0" />
+					</a>
+					<a 
+						href="https://www.instagram.com/miikakuisma"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-purple-300 hover:text-purple-100 transition-colors"
+					>
+						<img src="/instagram.svg" alt="Instagram" className="w-12 h-12 m-0" />
+					</a>
+				</div>
+				<div className="w-full h-px" />
 			</div>
 		</div>
 	);

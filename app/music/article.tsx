@@ -9,16 +9,20 @@ export const Article = ({ release }: Props) => {
 		<article className="relative p-4 md:p-8 h-full min-h-[300px] group">
 			{/* Background image with overlay */}
 			<div 
-				className="absolute inset-0 z-0 transition-transform duration-300 bg-cover bg-center group-hover:scale-105"
-				style={{ 
-					backgroundImage: `url(${release.image || '/default-release-bg.jpg'})`,
-				}} 
+				className="absolute inset-0 z-0 transition-transform duration-300 bg-cover bg-center bg-black/30 group-hover:scale-105"
 			/>
 			{/* Gradient overlay */}
-			<div className="absolute inset-0 z-10 bg-gradient-to-b from-purple-900/50 to-purple-900/90 group-hover:from-purple-900/70 group-hover:to-purple-900/90 transition-colors duration-500" />
+			{/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-gray-900/50 to-gray-900/90 group-hover:from-gray-900/70 group-hover:to-gray-900/90 transition-colors duration-500" /> */}
 			
 			{/* Content */}
-			<div className="relative z-20">
+			<a href={release.url} target="_blank" rel="noopener noreferrer" className="relative z-20 flex flex-col">
+				<div className="aspect-square w-full relative mb-4">
+					<img 
+						src={release.image || '/default-release-bg.jpg'} 
+						alt={release.title}
+						className="object-cover w-full h-full"
+					/>
+				</div>
 				<div className="flex justify-between gap-2 items-center">
 					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
 						{release.date ? (
@@ -38,7 +42,7 @@ export const Article = ({ release }: Props) => {
 				<p className="z-20 mt-4 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200">
 					{release.description}
 				</p>
-			</div>
+			</a>
 		</article>
 	);
 }; 
