@@ -47,8 +47,10 @@ export default async function ProjectsPage() {
           <p className="mt-4 text-zinc-400">
             NextJS, React, TypeScript, TailwindCSS, Web Audio API, WebAssembly, Web Component, Pure Vanilla, React Native, Expo, Swift / XCode, Open AI
           </p>
+          <p className="mt-8 text-zinc-400">
+            PS. Check my codesandbox.io profile at <a href="https://codesandbox.io/u/miikakuisma" className="text-zinc-100 hover:text-zinc-50">codesandbox.io/u/miikakuisma</a>
+          </p>
         </div>
-        <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
