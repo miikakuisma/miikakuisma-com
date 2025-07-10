@@ -7,9 +7,9 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Globe size={20} />,
-		href: "https://tatami.dev",
-		label: "tatami.dev",
-		handle: "Tatami Tuotanto",
+		href: "https://linktr.ee/miikakuisma",
+		label: "linktree",
+		handle: "Link Tree",
 	},
 	{
 		icon: <Github size={20} />,
